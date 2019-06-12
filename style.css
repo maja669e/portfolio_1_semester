@@ -153,27 +153,7 @@ nav a:hover {
     justify-content: center;
 }
 
-#portfolio {}
 
-#web {
-    background-color: #bbb4c9;
-
-}
-
-#animation {
-    background-color: #c7b4c9;
-
-}
-
-#indhold {
-    background-color: #b4b9c9;
-
-}
-
-#ux {
-    background-color: #b4c9c1;
-
-}
 
 #om img {
     max-height: 50vw;
@@ -205,4 +185,87 @@ nav a:hover {
     display: flex;
     justify-content: center;
     margin-right: 2vw;
+}
+
+
+.collapsible1 {
+    background-color: #bbb4c9;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.collapsible2 {
+    background-color: #c7b4c9;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.collapsible3 {
+    background-color: #a0abce;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.collapsible4 {
+    background-color: #b4c9c1;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible1:hover,
+.collapsible2:hover,
+.collapsible3:hover,
+.collapsible4:hover {
+    background-color: rgba(187, 180, 201, 0.51);
+}
+
+
+.collapsible1:after,
+.collapsible2:after,
+.collapsible3:after,
+.collapsible4:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
 }
