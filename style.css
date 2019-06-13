@@ -26,10 +26,10 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 5vw;
+
 }
 
-#footer_txt {
+.footer_txt {
     flex-grow: 1;
     flex-basis: 220px;
     margin: 2vw;
@@ -42,7 +42,6 @@ footer {
     display: flex;
     margin: 2vw;
 }
-
 
 #splash img {
     width: 100%;
@@ -75,6 +74,13 @@ h1 {
 h2 {
     font-family: 'Lato', sans-serif;
     color: #393939;
+    font-size: 25px;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    color: #393939;
+    font-size: 20px;
 }
 
 body {
@@ -86,7 +92,7 @@ body {
 nav {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, 0.40);
+    background-color: rgba(255, 255, 255, 0.20);
     position: sticky;
     width: 100%;
     list-style-type: none;
@@ -187,53 +193,61 @@ nav a:hover {
     margin-right: 2vw;
 }
 
+#portfolio {
+    padding-top: 8vw;
+}
+
 
 .collapsible1 {
     background-color: #bbb4c9;
-    color: white;
     cursor: pointer;
-    padding: 18px;
+    padding: 30px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    color: #393939;
 }
 
 .collapsible2 {
     background-color: #c7b4c9;
-    color: white;
     cursor: pointer;
-    padding: 18px;
+    padding: 30px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    color: #393939;
 }
 
 .collapsible3 {
     background-color: #a0abce;
-    color: white;
     cursor: pointer;
-    padding: 18px;
+    padding: 30px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    color: #393939;
 }
 
 .collapsible4 {
     background-color: #b4c9c1;
-    color: white;
     cursor: pointer;
-    padding: 18px;
+    padding: 30px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    color: #393939;
 }
 
 .active,
@@ -256,8 +270,6 @@ nav a:hover {
     margin-left: 5px;
 }
 
-
-
 .active:after {
     content: "\2212";
 }
@@ -268,4 +280,94 @@ nav a:hover {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.web_txt {
+    flex-grow: 1;
+    flex-basis: 200px;
+    /*parent*/
+}
+
+
+.masonry img {
+    transition: transform .2s;
+}
+
+.masonry img:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.5);
+}
+
+.masonry {
+    /* Masonry container */
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1em;
+    -moz-column-gap: 1em;
+    column-gap: 1em;
+    margin: 1.5em;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+.item {
+    display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    -webkit-transition: 1s ease all;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+}
+
+.item img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 320px) {
+    .masonry {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
 }
