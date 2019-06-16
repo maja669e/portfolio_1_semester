@@ -5,6 +5,7 @@
 img {
     width: 100%;
 
+
 }
 
 #baggrund {
@@ -23,6 +24,13 @@ footer {
     color: whitesmoke;
 }
 
+#footer_port {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 14vw;
+
+}
+
 #footer {
     display: flex;
     flex-wrap: wrap;
@@ -30,20 +38,31 @@ footer {
 
 .footer_txt {
     flex-grow: 1;
-    flex-basis: 220px;
+    flex-basis: 200px;
     margin: 2vw;
+    text-align: center;
 }
 
 #footer_img {
     flex-grow: 1;
-    flex-basis: 100px;
+    flex-basis: 200px;
     display: flex;
     margin: 2vw;
     justify-content: center;
 }
 
 #footer_img img {
-    width: 50px;
+    width: 40px;
+    height: 40px;
+}
+
+.copyright p {
+    flex-basis: 200px;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+    padding-bottom: 1vw;
 }
 
 
@@ -207,7 +226,7 @@ nav a:hover {
 .collapsible1 {
     background-color: #bbb4c9;
     cursor: pointer;
-    margin: 40px 20px 0px 20px;
+    margin: 70px 20px 0px 20px;
     padding: 30px;
     width: 90vw;
     border: none;
@@ -499,6 +518,13 @@ nav a:hover {
         font-size: 25px;
         font-family: 'Lato', sans-serif;
         color: #393939;
+    }
+
+}
+
+@media only screen and (min-width: 400px) {
+    #baggrund {
+        background-position: 50% 0%;
     }
 
 }
