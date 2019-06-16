@@ -162,14 +162,19 @@ nav a:hover {
 #om img {
     max-height: 50vw;
     max-width: 50vw;
+    background-color: #e9e6eb;
+    border-radius: 2vw;
+    border-style: solid;
+    border-color: white;
 }
 
 #om #sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    margin: 5vw;
+    margin: 5vw 15vw 5vw 15vw;
     padding: 2vw;
-    padding-left: 5vw;
+    background-color: ghostwhite;
+    border-radius: 2vw;
 }
 
 #om p {
@@ -185,18 +190,32 @@ nav a:hover {
 
 #om .mig {
     flex-grow: 2;
-    flex-basis: 250px;
+    flex-basis: 200px;
     display: flex;
     justify-content: center;
-    margin-right: 2vw;
 }
 
 #portfolio {
-    padding-top: 8vw;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
 }
 
-
 .collapsible1 {
+    background-color: #bbb4c9;
+    cursor: pointer;
+    margin: 40px 20px 0px 20px;
+    padding: 30px;
+    width: 90vw;
+    border: none;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    color: #393939;
+    outline: none;
+}
+
+/*.collapsible1 {
     background-color: #bbb4c9;
     cursor: pointer;
     padding: 30px;
@@ -207,45 +226,48 @@ nav a:hover {
     font-size: 25px;
     font-family: 'Lato', sans-serif;
     color: #393939;
-}
+}*/
 
 .collapsible2 {
     background-color: #c7b4c9;
     cursor: pointer;
     padding: 30px;
-    width: 100%;
+    margin: 40px 20px 0px 20px;
+    width: 90vw;
     border: none;
     text-align: left;
-    outline: none;
     font-size: 25px;
     font-family: 'Lato', sans-serif;
     color: #393939;
+    outline: none;
 }
 
 .collapsible3 {
     background-color: #a0abce;
     cursor: pointer;
     padding: 30px;
-    width: 100%;
+    margin: 40px 20px 0px 20px;
+    width: 90vw;
     border: none;
     text-align: left;
-    outline: none;
     font-size: 25px;
     font-family: 'Lato', sans-serif;
     color: #393939;
+    outline: none;
 }
 
 .collapsible4 {
     background-color: #b4c9c1;
     cursor: pointer;
     padding: 30px;
-    width: 100%;
+    margin: 40px 20px 0px 20px;
+    width: 90vw;
     border: none;
     text-align: left;
-    outline: none;
     font-size: 25px;
     font-family: 'Lato', sans-serif;
     color: #393939;
+    outline: none;
 }
 
 .active,
@@ -408,4 +430,72 @@ nav a:hover {
         -webkit-column-count: 3;
         column-count: 3;
     }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    .collapsible1 {
+        margin: 0;
+        background-color: #bbb4c9;
+        cursor: pointer;
+        padding: 30px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 25px;
+        font-family: 'Lato', sans-serif;
+        color: #393939;
+    }
+
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    .collapsible2 {
+        margin: 0;
+        background-color: #c7b4c9;
+        cursor: pointer;
+        padding: 30px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 25px;
+        font-family: 'Lato', sans-serif;
+        color: #393939;
+    }
+
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    .collapsible3 {
+        margin: 0;
+        background-color: #a0abce;
+        cursor: pointer;
+        padding: 30px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 25px;
+        font-family: 'Lato', sans-serif;
+        color: #393939;
+    }
+
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    .collapsible4 {
+        margin: 0;
+        background-color: #b4c9c1;
+        cursor: pointer;
+        padding: 30px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 25px;
+        font-family: 'Lato', sans-serif;
+        color: #393939;
+    }
+
 }
