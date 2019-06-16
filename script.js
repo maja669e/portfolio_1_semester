@@ -1,3 +1,7 @@
+window.addEventListener("load", document.getElementsByClassName("collapsible1"));
+
+
+
 var coll = document.getElementsByClassName("collapsible1");
 var i;
 

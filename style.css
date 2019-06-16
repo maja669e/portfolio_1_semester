@@ -4,29 +4,34 @@
 
 img {
     width: 100%;
+
 }
+
+#baggrund {
+    background-image: url(baggrund.png);
+    width: 100%;
+    max-width: none;
+    height: 120vh;
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
 
 footer {
     background-color: #a9a5ad;
     width: 100%;
     color: whitesmoke;
-    margin-top: 15vw;
-
 }
 
 #footer {
     display: flex;
     flex-wrap: wrap;
-    bottom: 0;
-
 }
 
 .footer_txt {
     flex-grow: 1;
     flex-basis: 220px;
     margin: 2vw;
-
-
 }
 
 #footer_img {
@@ -41,10 +46,6 @@ footer {
     width: 50px;
 }
 
-#splash img {
-    width: 100%;
-    display: block;
-}
 
 #splash_about img {
     width: 100%;
@@ -59,7 +60,7 @@ footer {
 a,
 p {
     font-family: 'Lato', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 h1 {
@@ -107,7 +108,6 @@ nav a {
     margin-right: 2vw;
     font-size: 18px;
     font-weight: bold;
-
 }
 
 
