@@ -4,8 +4,7 @@
 
 img {
     width: 100%;
-
-
+    height: auto;
 }
 
 #baggrund {
@@ -525,6 +524,15 @@ nav a:hover {
 @media only screen and (min-width: 400px) {
     #baggrund {
         background-position: 50% 0%;
+    }
+
+}
+
+@media only screen and (min-width: 400px) and (max-width: 712px) {
+
+    #splash_about img,
+    #splash_portfolio img {
+        height: 25vw;
     }
 
 }
