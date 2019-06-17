@@ -79,6 +79,7 @@ a,
 p {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
+    color: #393939;
 }
 
 h1 {
@@ -100,6 +101,12 @@ h3 {
     font-size: 20px;
 }
 
+h4 {
+    font-family: 'Lato', sans-serif;
+    color: #393939;
+    font-size: 18px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -114,6 +121,7 @@ nav {
     width: 100%;
     list-style-type: none;
     justify-content: center;
+    z-index: 3;
 }
 
 nav a {
@@ -142,12 +150,12 @@ nav a:hover {
 .dropbtn {
     border: none;
     cursor: pointer;
-
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+    z-index: 3;
 }
 
 .dropdown-content {
@@ -156,7 +164,6 @@ nav a:hover {
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
 
 }
 
@@ -167,10 +174,12 @@ nav a:hover {
     display: block;
     font-weight: 400;
 
+
 }
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
+
 }
 
 .dropdown:hover .dropdown-content {
@@ -291,6 +300,8 @@ nav a:hover {
     outline: none;
 }
 
+
+
 .active,
 .collapsible1:hover,
 .collapsible2:hover,
@@ -374,6 +385,14 @@ nav a:hover {
     padding: 6px 10px 8px 10px;
     border-radius: 1vw;
     color: white;
+}
+
+#portfolio p {
+    background-color: #fcfcfc;
+    margin: 3vw;
+    padding: 2vw;
+    border-radius: 1vw;
+    line-height: 1.5;
 }
 
 .masonry {
