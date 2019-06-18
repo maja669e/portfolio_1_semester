@@ -541,10 +541,11 @@ nav a:hover {
 
 @media only screen and (min-width: 321px) and (max-width: 712px) {
     #baggrund {
-        width: 100%;
+        width: 80vh;
         height: 70vh;
         background-position: center;
         background-size: cover;
+
     }
 
 }
